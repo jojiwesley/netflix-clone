@@ -1,50 +1,87 @@
-# React + TypeScript + Vite
+🎬 Netflix UI Clone
+Este é um clone da interface do usuário da Netflix, desenvolvido utilizando React, Firebase e outras ferramentas modernas. O objetivo deste projeto é recriar o design visual da Netflix, além de implementar algumas funcionalidades básicas para prática de front-end e integração com serviços de back-end.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Funcionalidades
+Autenticação de usuário com Firebase (login, logout e criação de conta).
+Navegação dinâmica com React Router DOM.
+Feedback visual de notificações com React Toastify.
+Organização modular de componentes e hooks personalizados.
+Gerenciamento de estado local para exibir conteúdo dinâmico.
+Animações suaves e design responsivo.
+🛠️ Ferramentas e Tecnologias
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
-Currently, two official plugins are available:
+Front-end
+React: Biblioteca JavaScript para construir interfaces dinâmicas.
+React Router DOM: Navegação baseada em rotas dinâmicas.
+React Firebase Hooks: Hooks para lidar com a autenticação e integração do Firebase no React.
+React Toastify: Biblioteca para exibição de notificações elegantes.
+Back-end
+Firebase: Serviço de back-end para autenticação e banco de dados.
+Desenvolvimento
+Vite: Ferramenta de build e desenvolvimento rápida para projetos front-end.
+TypeScript: Superset do JavaScript, adicionando tipagem estática ao código.
+ESLint: Linter para identificar e corrigir problemas no código.
+TypeScript-ESLint: Integração do TypeScript com o ESLint para análise de código.
+📦 Dependências
+json
+Copiar código
+"dependencies": {
+  "firebase": "^11.0.0",
+  "react": "^18.3.1",
+  "react-dom": "^18.3.1",
+  "react-firebase-hooks": "^5.1.1",
+  "react-router-dom": "^6.27.0",
+  "react-toastify": "^10.0.6"
+},
+"devDependencies": {
+  "@eslint/js": "^9.11.1",
+  "@types/react": "^18.3.10",
+  "@types/react-dom": "^18.3.0",
+  "@vitejs/plugin-react": "^4.3.2",
+  "eslint": "^9.11.1",
+  "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+  "eslint-plugin-react-refresh": "^0.4.12",
+  "globals": "^15.9.0",
+  "typescript": "^5.5.3",
+  "typescript-eslint": "^8.7.0",
+  "vite": "^5.4.8"
+}
+⚙️ Instalação e Execução
+Clone este repositório:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+bash
+Copiar código
+git clone https://github.com/seu-usuario/seu-repositorio.git
+Navegue até a pasta do projeto:
 
-## Expanding the ESLint configuration
+bash
+Copiar código
+cd netflix-clone
+Instale as dependências:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+bash
+Copiar código
+npm install
+Inicie o servidor de desenvolvimento:
 
-- Configure the top-level `parserOptions` property like this:
+bash
+Copiar código
+npm run dev
+Acesse o projeto no navegador:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+bash
+Copiar código
+http://localhost:3000
+🔥 Próximos Passos
+Integração com a API de filmes da TMDB para exibir filmes reais.
+Implementação de uma página de perfil e controle de assinaturas.
+Melhorias na responsividade para dispositivos móveis.
+🎨 Layout
+O layout do projeto foi inspirado na IU oficial da Netflix. A aparência é semelhante à página inicial da plataforma, com carrosséis de filmes e séries, e animações de hover.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+🤝 Contribuições
+Contribuições, sugestões e melhorias são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+📄 Licença
+Este projeto está licenciado sob a MIT License - veja o arquivo LICENSE para mais detalhes.
